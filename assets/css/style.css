@@ -1,0 +1,121 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+header {
+    grid-area: header;
+    background-image: url("../img/fondo.png");
+    background-size: cover;
+    display: grid;
+    justify-content: center;
+    align-items: center;  
+}
+header h1 {
+    color: #07AF90;
+    font-weight: 900;
+}
+aside {
+    grid-area: aside;
+    background-color: #F4D2F7;
+    color: #07AF90;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    padding: 15px;
+}
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: top;  
+    background-color: #FBEEFC;
+    padding: 40px;
+    gap: 20px;
+}
+footer {
+    grid-area: footer;
+    background-color: #E29DFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    padding: 10px;
+    gap: 20px;
+}
+body {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "aside main main"
+    "footer footer footer";
+}
+.principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.principal i {
+    font-size: 18px;
+}
+.categoria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+.categoria h4 {
+    margin: 0;
+    padding: 0;
+}
+.categoria p {
+    color: #48C9B0;
+    margin: 0;
+    padding: 0;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    box-shadow: 0 4px 8px rgba(225, 77, 241, 0.8);
+    border-radius: 8px;
+    padding: 10px;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.card-body h5 {
+    color: #07AF90;
+    margin: 0;
+}
+.card-body p {
+    color: #48C9B0;
+    margin: 0;
+}
+button {
+    margin-top: 10px;
+    padding: 5px;
+    background-color: #E3A1E7;
+    border: none;
+}
+button a {
+    color: #73ECAF;
+    text-decoration: none;
+}
+button:hover {
+    background-color: #E497E7 ;
+}
+button:active {
+    background-color: #D7BDE2;
+}
+footer i {
+    font-size: 20px;
+    color: #31E7B8;
+}
